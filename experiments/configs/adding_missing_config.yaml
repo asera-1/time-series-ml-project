@@ -1,0 +1,21 @@
+meta:
+  name: "test_add_missing_interval"
+  tags:
+    description: "Test if predictions are more accurate if missing intervals and/or days are added to the dataset."
+    hypothesis: "Predictions are more accurate without missing intervals but more accurate with missing days."
+    model: "XGBoost"
+    method: "grid"
+experiment:
+  seed: 42
+  model_type: "xgb"
+  search_type: "grid"
+  prediction_type: ["multi"]
+  temporal_level: "interval"
+  # temporal_level: "day"
+  add_missing_intervals: [False, True]
+  add_missing_days: [False, True]
+  store_ids: [[1, 2]]
+  features: ["year", "semester_phase", "semester_period", "month", "week", "weekday", "day", "holiday", "open", "hour", "interval"]
+  n_features: -1
+  targets: ["MAIN", "SIDE", "SOUP", "DESSERT", "SALAD", "BOTTLE", "BAKED_GOOD", "CONDIMENT", "OTHER"]
+  n_runs: 6 

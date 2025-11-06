@@ -1,0 +1,1 @@
+hour,interval,store_id,category

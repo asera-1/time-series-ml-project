@@ -1,0 +1,26 @@
+meta:
+  name: "total_sales_hour"
+  tags:
+    description: "Testing the effect of adding missing interval or daily data on the performance of a single model wich predicts category sales for each interval."
+    hypothesis: "Adding missing data increases on average increases rmse and mae"
+    model: "xgboost"
+    method: "random"
+experiment:
+  seed: 42
+  model_type: "xgb"
+  search_type: "random"
+  prediction_type: ["multi"]
+  temporal_level: "hour"
+  add_missing_intervals: [True]
+  add_missing_days: [True]
+  store_ids: [[1,2]]
+  features: ["year", "semester_phase", "semester_period", "month", "week", "weekday", "day", "holiday", "hour", "open"]
+  n_features: -1
+  targets: ["TOTAL_SALES"]
+  n_runs: 5
+  model_params:
+    max_depth: [10]
+    n_estimators: [1000]
+    learning_rate: [0.02]
+    subsample: [0.8]
+    colsample_bytree: [0.9]

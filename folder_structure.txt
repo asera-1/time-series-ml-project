@@ -1,0 +1,38 @@
+demandprediction/
+├── README.md
+├── .gitignore
+├── .venv/                   
+├── pyproject.toml           
+├── uv.lock
+├── src/                     
+│   └── demandprediction/
+│       ├── preprocessing/
+│       │   ├── __init__.py
+│       │   ├── temporal_features.py
+│       │   └── calendar_features.py 
+│       ├── models/
+│       │   ├── __init__.py
+│       │   ├── train_prophet.py
+│       │   └── train_xgb.py
+│       └── __init__.py
+├── experiments/             
+│   ├── README.md
+│   ├── artifacts/
+│   ├── configs/
+│   └── main.py
+├── prediction_api/          
+│   ├── Dockerfile
+│   ├── docker-compose.yml
+│   ├── .dockerignore
+│   ├── README.md
+│   └── app/
+│       ├── main.py
+│       └── api.py
+├── visualization/
+│   ├── images/
+│   └── visualization.py
+└── data/
+    ├── features/
+    ├── raw/
+    └── processed/
+ 

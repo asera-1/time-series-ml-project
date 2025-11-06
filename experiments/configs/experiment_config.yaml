@@ -1,0 +1,24 @@
+meta:
+  name: "test_add_missing"
+  tags:
+    description: "Testing the effect of adding missing interval or daily data on the performance of a single model wich predicts category sales for each interval."
+    hypothesis: "Adding missing data increases on average increases rmse and mae"
+    model: "xgboost"
+    method: "random"
+experiment:
+  seed: 42
+  model_type: "xgb"
+  # model_type: "prophet"
+  search_type: "random"
+  # search_type: "grid"
+  prediction_type: ["multi"]
+  # prediction_type: ["single", "multi"]
+  temporal_level: "interval"
+  add_missing_intervals: [True, False]
+  add_missing_days: [True, False]
+  store_ids: [[1], [2], [1, 2]]
+  features: ["year", "month", "week", "day", "weekday", "holiday", "open", "hour", "interval"]
+  n_features: 9 
+  targets: ["MAIN", "SIDE", "SOUP", "DESSERT", "SALAD", "BOTTLE", "BAKED_GOOD", "CONDIMENT", "OTHER"]
+  n_runs: 5
+  

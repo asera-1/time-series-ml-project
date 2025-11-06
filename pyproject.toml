@@ -1,0 +1,29 @@
+[project]
+name = "demandprediction"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "datetime>=5.5",
+    "joblib>=1.4.2",
+    "matplotlib>=3.10.1",
+    "numpy>=2.2.3",
+    "pandas>=2.2.3",
+    "prophet>=1.1.6",
+    "scikit-learn>=1.6.1",
+    "seaborn>=0.13.2",
+    "xgboost<=2.1.4",
+    "mlflow>=2.4.1"
+]
+
+
+[tootl.hatch.build.targets.wheel]
+packages = ["src/demandprediction"]
+
+[build-system]
+requires = ["hatchling"]  # or "setuptools", etc.
+build-backend = "hatchling.build"  # or "setuptools.build_meta"
+
+
+   
