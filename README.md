@@ -339,11 +339,7 @@ Unfortunately it was very difficult to gain meaningful insights into wether reco
 - Potential ensemble methods combining daily Prophet with interval-based XGBoost for maximum synergy.
 ---
 
-## References  
 
-- [Project Repository](https://github.com/AI-in-Practice-UOS/DemandPredictionProject)  
-- Dataset Source (if applicable)  
-- Any relevant research papers or external resources  
 
 ### Contributors  
 - [@asera-1](https://github.com/asera-1)  
