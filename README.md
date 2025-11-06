@@ -1,18 +1,35 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/1hVbdupP)
-# AI in Practice - VisioLab Final Project: Demand Prediction  
+# AI in Practice – VisioLab Final Project: Demand Prediction
 
-Welcome to our group's final project in collaboration with **VisioLab**.  
+Welcome to my public portfolio copy of our group's final project for the **"AI in Practice – How to Get Away from Jupyter Notebooks"** university course at Universität Osnabrück, in partnership with **VisioLab**.
 
-This project is the result of our group work for a university course called **"AI in Practice - How to Get Away from Jupyter Notebooks."**  
+This repository demonstrates end-to-end time series forecasting, feature engineering, model optimization, and real-world deployment for sales prediction, using both the Prophet and XGBoost frameworks. 
 
-It marks our first experience working with **time series data** for predictive analytics, and we are excited to share our approach with you! 🚀  
+It showcases:
+- Collaboration on complex, business-relevant data science problems.
+- Practical ML engineering: RESTful deployment, experiment tracking, and reproducible pipelines.
+- Transparent documentation, high code quality, and replicable results (with synthetic/sample data).
 
-This project focuses on demand prediction for food items. Historical sales data from 2023 and 2024 is provided from two locations. The data is grouped into 15-minute intervals. The goal is to build a model to predict:
+---
 
-- Total number of items sold for the entire day
-- Number of items sold per category in each 15-minute interval.
+## ⚠️ Privacy & Data Policy
 
-and to make the model available via a REST API.
+- **This is a public, portfolio-oriented version of the original internal project**.  
+- **All sensitive and client data (raw sales, business/private info in `/data/`) has been deleted or replaced with example files.**
+- All modeling code, engineering workflows, and documentation are retained for educational and recruiting purposes.
+- Please refer to the [original private repository](https://github.com/AI-in-Practice-UOS/DemandPredictionProject) for full collaboration context (access required).
+
+
+
+---
+
+## Project Summary
+
+The aim is to predict:
+- Total number of food items sold per day
+- Per-category item sales in every 15-minute interval
+- Deliver interpretable results via a production-ready REST API
+
 
 ## Dataset
 
