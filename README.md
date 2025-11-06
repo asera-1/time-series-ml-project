@@ -17,7 +17,6 @@ It showcases:
 - **This is a public, portfolio-oriented version of the original internal project**.  
 - **All sensitive and client data (raw sales, business/private info in `/data/`) has been deleted or replaced with example files.**
 - All modeling code, engineering workflows, and documentation are retained for educational and recruiting purposes.
-- Please refer to the [original private repository](https://github.com/AI-in-Practice-UOS/DemandPredictionProject) for full collaboration context (access required).
 
 
 
